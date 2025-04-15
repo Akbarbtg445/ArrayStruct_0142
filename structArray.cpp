@@ -35,5 +35,4 @@ int main(){
     cout << "NAMA = "<< mhs[n].nama << endl;
     cout << "ALAMAT DESA ="<< mhs[n].alamat.desa << endl;
     cout << "ALAMAT KOTA ="<< mhs[n].alamat.kota << endl;
-
 }
