@@ -1,10 +1,16 @@
 #include <iostream>
 using namespace std;
 
+struct alamatDetail
+{
+    string desa;
+    string kota;
+};
+
 struct mahasiswa
 {
     string nama;
-    string alamat;
+    alamatDetail alamat;
     int umur;
 };
 
@@ -15,12 +21,15 @@ int main()
     //mengisi data
     cout << "Isikan data nama: ";
     cin >> mhs.nama;
-    cout << "Isikan data alamat : ";
-    cin >> mhs.alamat;
-    cout << "Isikan data usia:" ;
+    cout << "Isikan data kota: ";
+    cin >> mhs.alamat.kota;
+    cout << "Isikan data desa: ";
+    cin >> mhs.alamat.desa;
+    cout << "Isikan data usia : ";
     cin >> mhs.umur;
     cout << "Data Mahasiswa" << endl;
-    cout << "Nama: " << mhs.nama << endl;
-    cout << "Alamat: " << mhs.alamat << endl;
-    cout << "Usia : " << mhs.umur << endl;
+    cout << "Nama: "<< mhs.nama << endl;
+    cout << "Kota: " << mhs.alamat.kota << endl;
+    cout << "Desa: "<< mhs.alamat.desa << endl;
+    cout << "Usia: "<< mhs.umur << endl;
 }
