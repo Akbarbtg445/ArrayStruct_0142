@@ -44,5 +44,4 @@ int main()
         cout << "Usia:" << mhs[i].umur << endl;
     }
 
-    ret
 }
